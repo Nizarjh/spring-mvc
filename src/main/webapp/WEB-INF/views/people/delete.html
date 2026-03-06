@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete niger</title>
+</head>
+<body>
+
+<form th:method="Delete" th:action="@{/people/{id}(id=${person.getId()})}" th:object="${person}">
+    <br/>
+    <input type="submit" value="Delete" />
+</form>
+</body>
+</html>
